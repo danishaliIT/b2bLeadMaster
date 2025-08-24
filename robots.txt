@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /data-entry-researsh
 
 Sitemap: https://b2bleadmaster.online/sitemap.xml
+
+
