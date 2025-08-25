@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" type="image/png" href="logo.jpg">
+     <link rel="icon" type="image/png" href="https://b2bleadmaster.online/logo.jpg">
      <!-- Primary Meta Tags -->
   <title>B2B Lead Master | Professional B2B Lead Generation Services</title>
   <meta name="title" content="B2B Lead Master | Professional B2B Lead Generation Services">
@@ -42,6 +42,7 @@
     ]
   }
   </script>
+  
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
@@ -107,149 +108,230 @@
             background: linear-gradient(90deg, transparent, #667eea, transparent);
             margin: 4rem 0;
         }
+
+        /* Scroll animation for projects */
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+.animate-fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Extra hover effect for project cards */
+.project-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(102, 126, 234, 0.2); /* subtle border */
+    border-radius: 1rem; /* rounded corners */
+    padding: 1rem; /* space inside the card */
+    background: rgba(255,255,255,0.02); /* very light transparent background */
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+/* Text section hover effect */
+.project-card .md\:w-1\/2 {
+    transition: background 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+    border-radius: 0.75rem;
+}
+
+.project-card:hover .md\:w-1\/2 {
+    padding: 1.5rem;
+}
+/* Floating profile photo */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+.hero-photo {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Animated gradient text */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animated-gradient {
+  background: linear-gradient(270deg, #667eea, #764ba2, #00c6ff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s ease infinite;
+}
+
     </style>
+    
 </head>
 <body class="bg-black text-white overflow-x-hidden">
     <!-- Hero Section -->
-       <section class="min-h-screen flex items-center justify-center relative">
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"></div>
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="fade-in">
-                <!-- Profile Photo -->
-                <div class="mb-8">
-                    <div class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
-                        <img src="https://b2bleadmaster.online/profilephoto.png" alt="B2B Lead Generation Expert" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    🚀 <span class="gradient-text">Certified B2B Lead Generation Expert</span> | B2B Lead Master
-                </h1>
-                <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-                    Helping startups, sales teams & marketers get verified leads that convert.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <a href="#contact" class="glow-button bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center">Hire Me</a>
-                    <a href="#projects" class="glow-button border-2 border-purple-500 hover:bg-purple-500/20 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center">See My Work</a>
-                </div>
-            </div>
+      <!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"></div>
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="fade-in">
+      <!-- Profile Photo -->
+      <div class="mb-8">
+        <div class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl hero-photo">
+          <img src="https://b2bleadmaster.online/profilephoto.png" alt="B2B Lead Generation Expert" class="w-full h-full object-cover">
         </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </div>
-    </section>
+      </div>
 
-    <div class="section-divider"></div>
+      <!-- Animated Gradient Headline -->
+      <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        🚀 <span class="animated-gradient">Certified B2B Lead Generation Expert</span> | Danish Ali
+      </h1>
+
+      <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+        Helping startups, sales teams & marketers get verified leads that convert.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="#contact" class="glow-button bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center">Hire Me</a>
+        <a href="#projects" class="glow-button border-2 border-purple-500 hover:bg-purple-500/20 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center">See My Work</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Down Icon -->
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
 
     <!-- Projects Section -->
-  <section class="py-20 bg-gray-900" id="projects">
+  <section class="py-20 bg-black-900 text-white" id="projects">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">
-      Featured <span class="gradient-text">Projects</span>
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-in-up">
+      Featured <span class="bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text">Projects</span>
     </h2>
 
-    <div class="flex flex-col gap-16">
+    <div class="flex flex-col gap-20">
 
-      <!-- Project 1: Text Left, Image Right -->
-      <div class="flex flex-col md:flex-row items-center gap-8 fade-in">
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-bold mb-4">Real Estate Data Research & Website Content Entry Specialist</h3>
-          <p class="text-gray-300 mb-4">
+      <!-- Project 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-10 animate-fade-in-up project-card">
+        <div class="md:w-1/2 space-y-4">
+          <h3 class="text-2xl gradient-text font-bold" class="">Real Estate Data Research & Website Content Entry Specialist</h3>
+          <p class="text-gray-300">
             Worked for 2 years on a confidential client project, specializing in finding and organizing real estate property data, images, and land details. Delivered high-quality, well-structured property listings that enhanced the project’s online visibility.
           </p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Data Research</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Data Entry & Management</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Data Research</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Data Entry & Management</span>
           </div>
         </div>
-        <div class="md:w-1/2 relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-gray-700">
-          <img src="https://b2bleadmaster.online/1.png" alt="Project 1 Screenshot" class="w-full h-full object-cover">
+        <div class="md:w-1/2 group">
+          <div class="h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg group-hover:scale-105 transition-transform duration-500">
+            <img src="https://b2bleadmaster.online/1.png" alt="Project 1 Screenshot" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
         </div>
       </div>
 
-      <!-- Project 2: Image Left, Text Right -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
-        <div class="md:w-1/2 relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-gray-700">
-          <img src="https://b2bleadmaster.online/2.png" alt="Project 2 Screenshot" class="w-full h-full object-cover">
-        </div>
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-bold mb-4">Executive Data Research & Lead Enrichment</h3>
-          <p class="text-gray-300 mb-4">
+      <!-- Project 2 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-10 animate-fade-in-up project-card">
+        <div class="md:w-1/2 space-y-4">
+          <h3 class="text-2xl gradient-text font-bold">Executive Data Research & Lead Enrichment</h3>
+          <p class="text-gray-300">
             Conducted a German client project focused on finding CEOs’ details, including verified emails and company addresses. Highlighting my proven ability to research executives with accuracy, confidentiality, and professionalism.
           </p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Data Research</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Lead Generation</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Data Research</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Lead Generation</span>
+          </div>
+        </div>
+        <div class="md:w-1/2 group">
+          <div class="h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg group-hover:scale-105 transition-transform duration-500">
+            <img src="https://b2bleadmaster.online/2.png" alt="Project 2 Screenshot" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
           </div>
         </div>
       </div>
 
-      <!-- Project 3: Text Left, Image Right -->
-      <div class="flex flex-col md:flex-row items-center gap-8 fade-in">
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-bold mb-4">B2B Data Enrichment & Prospect Verification</h3>
-          <p class="text-gray-300 mb-4">
+      <!-- Project 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-10 animate-fade-in-up project-card">
+        <div class="md:w-1/2 space-y-4">
+          <h3 class="text-2xl gradient-text font-bold">B2B Data Enrichment & Prospect Verification</h3>
+          <p class="text-gray-300">
             Enhanced client-provided data by verifying emails, phone numbers, and social links of decision-makers. Supported effective outreach campaigns through accurate prospect research and lead validation.
           </p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Lead Generation</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Web Research</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">LinkedIn Research</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Lead Generation</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Web Research</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">LinkedIn Research</span>
           </div>
         </div>
-        <div class="md:w-1/2 relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-gray-700">
-          <img src="https://b2bleadmaster.online/3.png" alt="Project 3 Screenshot" class="w-full h-full object-cover">
+        <div class="md:w-1/2 group">
+          <div class="h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg group-hover:scale-105 transition-transform duration-500">
+            <img src="https://b2bleadmaster.online/3.png" alt="Project 3 Screenshot" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
         </div>
       </div>
 
-      <!-- Project 4: Image Left, Text Right -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
-        <div class="md:w-1/2 relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-gray-700">
-          <img src="https://b2bleadmaster.online/4.png" alt="Project 4 Screenshot" class="w-full h-full object-cover">
-        </div>
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-bold mb-4">CRM Data Entry & Management Specialist</h3>
-          <p class="text-gray-300 mb-4">
+      <!-- Project 4 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-10 animate-fade-in-up project-card">
+        <div class="md:w-1/2 space-y-4">
+          <h3 class="text-2xl gradient-text font-bold">CRM Data Entry & Management Specialist</h3>
+          <p class="text-gray-300">
             Managed CRM data entry with 100% accuracy and confidentiality. Maintained secure and organized records for clients, demonstrating reliability and precision.
           </p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">CRM Data Management</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Data Accuracy & Confidentiality</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">CRM Data Management</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Data Accuracy & Confidentiality</span>
+          </div>
+        </div>
+        <div class="md:w-1/2 group">
+          <div class="h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg group-hover:scale-105 transition-transform duration-500">
+            <img src="https://b2bleadmaster.online/4.png" alt="Project 4 Screenshot" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
           </div>
         </div>
       </div>
 
-      <!-- Project 5: Text Left, Image Right -->
-      <div class="flex flex-col md:flex-row items-center gap-8 fade-in">
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-bold mb-4">Constant Contact CRM & Email Campaign Management</h3>
-          <p class="text-gray-300 mb-4">
+      <!-- Project 5 -->
+      <div class="flex flex-col md:flex-row items-center gap-10 animate-fade-in-up project-card">
+        <div class="md:w-1/2 space-y-4">
+          <h3 class="text-2xl gradient-text font-bold">Constant Contact CRM & Email Campaign Management</h3>
+          <p class="text-gray-300">
             Managed client Constant Contact CRM and email campaigns, keeping data accurate and workflows smooth for outreach.
           </p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">CRM Data Updating</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Email Campaign Management</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">CRM Data Updating</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Email Campaign Management</span>
           </div>
         </div>
-        <div class="md:w-1/2 relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-gray-700">
-          <img src="https://b2bleadmaster.online/5.png" alt="Project 5 Screenshot" class="w-full h-full object-cover">
+        <div class="md:w-1/2 group">
+          <div class="h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg group-hover:scale-105 transition-transform duration-500">
+            <img src="https://b2bleadmaster.online/5.png" alt="Project 5 Screenshot" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
         </div>
       </div>
 
-      <!-- Project 6: Image Left, Text Right -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
-        <div class="md:w-1/2 relative h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl bg-gray-700">
-          <img src="https://b2bleadmaster.online/last.png" alt="Project 6 Screenshot" class="w-full h-full object-cover">
-        </div>
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-bold mb-4">Multi-Industry B2B Research & Lead Generation</h3>
-          <p class="text-gray-300 mb-4">
+      <!-- Project 6 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-10 animate-fade-in-up project-card p-4">
+        <div class="md:w-1/2 space-y-4">
+          <h3 class="text-2xl gradient-text font-bold">Multi-Industry B2B Research & Lead Generation</h3>
+          <p class="text-gray-300">
             Successfully researched and delivered targeted data across 10+ industries, providing verified leads and company details for sectors like biotech, logistics, agriculture, mining, construction, real estate, and more.
           </p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Industry-Specific Lead Research</span>
-            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Cross-Niche Data Sourcing</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Industry-Specific Lead Research</span>
+            <span class="tag border-2 border-purple-500 hover:bg-purple-500/20 px-4 py-1 rounded-full">Cross-Niche Data Sourcing</span>
+          </div>
+        </div>
+        <div class="md:w-1/2 group">
+          <div class="h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl border border-gray-700 bg-gray-800 shadow-lg group-hover:scale-105 transition-transform duration-500">
+            <img src="https://b2bleadmaster.online/last.png" alt="Project 6 Screenshot" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
           </div>
         </div>
       </div>
@@ -257,6 +339,7 @@
     </div>
   </div>
 </section>
+
 
 
 
@@ -301,39 +384,48 @@
     <div class="section-divider"></div>
 
     <!-- Tools Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">
-                Tools & <span class="gradient-text">Technologies</span>
-            </h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
-                    <div class="text-3xl mb-3">🚀</div>
-                    <h4 class="font-semibold">Apollo.io</h4>
-                </div>
-                <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
-                    <div class="text-3xl mb-3">💼</div>
-                    <h4 class="font-semibold">LinkedIn Sales Navigator</h4>
-                </div>
-                <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
-                    <div class="text-3xl mb-3">🎯</div>
-                    <h4 class="font-semibold">Hunter.io</h4>
-                </div>
-                <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
-                    <div class="text-3xl mb-3">📧</div>
-                    <h4 class="font-semibold">Lemlist</h4>
-                </div>
-                <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
-                    <div class="text-3xl mb-3">🔍</div>
-                    <h4 class="font-semibold">ZoomInfo</h4>
-                </div>
-                <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
-                    <div class="text-3xl mb-3">📊</div>
-                    <h4 class="font-semibold">Google Sheets</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+   <section class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">
+      Tools & <span class="gradient-text">Technologies</span>
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      
+      <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
+        <img src="https://b2bleadmaster.online/appollow.svg" alt="Apollo.io" class="w-16 h-16 mx-auto mb-3 rounded-full object-cover">
+        <h4 class="font-semibold">Apollo.io</h4>
+      </div>
+      
+      <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
+        <img src="https://b2bleadmaster.online/sales.png" alt="LinkedIn Sales Navigator" class="w-16 h-16 mx-auto mb-3 rounded-full object-cover">
+        <h4 class="font-semibold">LinkedIn Sales Navigator</h4>
+      </div>
+      
+      <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
+        <img src="https://b2bleadmaster.online/lusha.png" alt="Hunter.io" class="w-16 h-16 mx-auto mb-3 rounded-full object-cover">
+        <h4 class="font-semibold">Lusha</h4>
+      </div>
+      
+      <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
+        <img src="https://b2bleadmaster.online/leedleeper.png" alt="Snov.io" class="w-16 h-16 mx-auto mb-3 rounded-full object-cover">
+        <h4 class="font-semibold">LeedLeeper</h4>
+      </div>
+      
+      <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
+        <img src="https://b2bleadmaster.online/zoom.png" alt="ZoomInfo" class="w-16 h-16 mx-auto mb-3 rounded-full object-cover">
+        <h4 class="font-semibold">ZoomInfo</h4>
+      </div>
+      
+      <div class="fade-in hover-lift bg-gray-900/50 p-6 rounded-xl border border-gray-800 text-center">
+        <img src="https://b2bleadmaster.online/sheet.png" alt="Google Sheets" class="w-16 h-16 mx-auto mb-3 rounded-full object-cover">
+        <h4 class="font-semibold">Google Sheets</h4>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
 
     <div class="section-divider"></div>
 
@@ -383,8 +475,7 @@
                     <div class="grid md:grid-cols-2 gap-4">
                         <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
                             <h4 class="font-semibold text-purple-400">Google Digital Marketing & E-commerce</h4>
-                            <p class="text-gray-400 text-sm">https://coursera.org/verify/profession
- al-cert/C9U4H9GVGQW  • 2025</p>
+                            <p class="text-gray-400 text-sm">https://coursera.org/verify/professional-cert/C9U4H9GVGQW  • 2025</p>
                         </div>
                         <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800">
                             <h4 class="font-semibold text-purple-400">LinkedIn Sales Navigator Certified</h4>
@@ -530,9 +621,9 @@
         }, observerOptions);
 
         // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
+       document.querySelectorAll('.fade-in, .animate-fade-in-up').forEach(el => {
+    observer.observe(el);
+});
 
         // Parallax effect for hero section
         window.addEventListener('scroll', () => {
@@ -600,15 +691,6 @@
     }
   });
 </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
